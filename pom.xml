@@ -52,8 +52,8 @@
 	</dependencies>
 
 	<build>
-		<sourceDirectory>api/src/main/kotlin</sourceDirectory>
-		<testSourceDirectory>api/src/test/kotlin</testSourceDirectory>
+		<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+		<testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -66,6 +66,7 @@
 					<args>
 						<arg>-Xjsr305=strict</arg>
 					</args>
+					<jvmTarget>${java.version}</jvmTarget>
 					<compilerPlugins>
 						<plugin>spring</plugin>
 					</compilerPlugins>
