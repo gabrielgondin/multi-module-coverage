@@ -1,4 +1,7 @@
 package com.ggo.multi_module_coverage.domain
 
-class Country {
+enum class Country {
+    CANADA,
+    US,
+    BRAZIL
 }
